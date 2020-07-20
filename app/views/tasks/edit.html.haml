@@ -1,0 +1,8 @@
+.SettingGroupForm
+  .Container
+    = form_with model: [@group, @task], local: true do |f|
+      .List
+        %h1.Container__title
+          本日のToDoリスト
+        = f.text_area :todo, class: 'List__todo', placeholder: '1行目&#13;&#10;2行目&#13;&#10;3行目'.html_safe , rows: 20, cols: 70
+        %input.Container__submit{type: 'submit', value: 'Send'}

@@ -1,0 +1,21 @@
+.SideBox
+  .UserBox
+    .UserBox__list
+      %h3.UserBox__user
+        = current_user.name
+      %ul.UserBox__iconList
+        %li.UserBox__Icon
+          = link_to new_group_path(current_user) do
+            = icon('fas', 'edit')
+        %li.UserBox__Icon
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog')
+  .GroupBox
+    - current_user.groups.each do |group|
+      .Group
+        = link_to group_tasks_path(group) do
+          .Group__name
+            = group.name
+          -# .Group__message
+          -#   メッセージはまだありません
+    
