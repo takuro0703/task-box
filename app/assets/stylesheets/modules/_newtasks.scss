@@ -1,0 +1,60 @@
+h1 {
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #f05050;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.SettingGroupForm {
+  width: 980px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Container {
+  text-align: center;
+  flex-direction: column;
+  &__submit {
+    color: #38AEF0;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+.List {
+  flex-direction: column;
+  display: inline-flex;
+  &__name {
+    display: inline-block;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+  }
+  &__todo {
+    font-size: 15px;
+    margin: 20px 0px;
+    display: inline-block;
+  }
+}
