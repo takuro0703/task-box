@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px 20px;
   }
   &__user {
     font-size: 16px;
@@ -73,6 +73,11 @@
   margin: 0px 10px 10px 10px;
   border-radius: 20px;
   padding: 10px;
+  text-decoration: none;
+  &__name {
+    display: inline-block;
+    color: black;
+  }
 }
 
 .MainBox {
@@ -93,7 +98,32 @@
   background-color:white;
   height: 80px;
   width: 100%;
-  padding: 20px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  &__name {
+    font-size: 20px;
+  }
+  &__edit {
+    color: #999;
+    display: flex;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  &__member {
+    padding-right: 5px;
+  }
+  &__editButton {
+    display: block;
+    border-radius: 20px;
+    background-color: #38AEF0;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    padding: 0 20px;
+    text-decoration: none;
+  }
 }
 
 .MainText {
@@ -110,15 +140,32 @@
   border-radius: 20px;
   padding: 10px;
   white-space: pre-wrap;
+  &__text {
+    font-size: 20px;
+  }
+  &__user {
+    font-size: 12px;
+    width: 400px;
+    margin-left: auto;
+    text-align: right;
+  }
+  &__date {
+    font-size: 10px;
+    width: 150px;
+    text-align: right;
+    margin-left: auto;
+  }
   &__editButton {
-    background-color: #ffffff;
-    color: #38AEF0;
+    background-color: #38AEF0;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
-    line-height: 60px;
+    display: block;
+    width: 60px;
+    height: 40px;
     padding: 10px;
-    margin-right: 20px;
     border-radius: 20px;
+    margin-left: auto;
   }
 }
 
@@ -128,8 +175,8 @@
   // display: flex;
   text-align: right;
   &__newButton {
-    background-color: #ffffff;
-    color: #38AEF0;
+    background-color: #38AEF0;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     line-height: 60px;
