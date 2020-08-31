@@ -35,6 +35,11 @@ https://gyazo.com/25ed9fcf6e545f10596993c4fc561ec7
 
 https://task-box.herokuapp.com
 
+### テストアカウント
+
+email: test955@gmail.com
+pass ; test12344321
+
 ### Development environment
 
 Ruby 2.6.5
